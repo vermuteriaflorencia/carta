@@ -1,17 +1,6 @@
-import logo from './logo.svg';
+
 import './App.css';
 import React, { useEffect, useState } from "react";
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import Switch from '@mui/material/Switch';
-import FormGroup from '@mui/material/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
-import Slider from '@mui/material/Slider';
 import Carta from './Carta';
 
 
@@ -26,6 +15,8 @@ const style = {
 	boxShadow: 24,
 	p: 4,
 };
+
+
 
 const edibless = {
 	tapas: [{
@@ -216,6 +207,10 @@ const edibless = {
 	}],
 	vinos: {
 		rosado: [{
+			itemName: "",
+			cupPrice: "Copa",
+			bottlePrice: "Botella"
+		},{
 			itemName: "Quebero",
 			cupPrice: "2,20 €",
 			bottlePrice: "9,00 €"
@@ -231,6 +226,10 @@ const edibless = {
 			bottlePrice: "20,00 €"
 		}],
 		tinto: [{
+			itemName: "",
+			cupPrice: "Copa",
+			bottlePrice: "Botella"
+		},{
 			itemName: "Quebero",
 			cupPrice: "2,20 €",
 			bottlePrice: "9,00 €"
@@ -256,6 +255,10 @@ const edibless = {
 			bottlePrice: "25,00 €"
 		}],
 		blanco: [{
+			itemName: "",
+			cupPrice: "Copa",
+			bottlePrice: "Botella"
+		},{
 			itemName: "Quebero",
 			cupPrice: "2,20 €",
 			bottlePrice: "9,00 €"
@@ -345,7 +348,7 @@ const edibless = {
 		},
 		{
 			itemName: "La Fabulosa",
-			description: "increible",
+			description: "",
 			price: "4,00 €"
 		},
 		{
@@ -412,63 +415,54 @@ const edibless = {
 		}],
 	cerveza: [
 		{
-		itemName: "Caña Estrella Damm 0,33cl",
-		description: "",
-		price: "2,00 €"
-	},
+			itemName: "Caña Estrella Damm 0,33cl",
+			description: "",
+			price: "2,00 €"
+		},
 		{
-		itemName: "Caña Estrella Damm 0,25cl",
-		description: "",
-		price: "1,80 €"
-	},
+			itemName: "Caña Estrella Damm 0,25cl",
+			description: "",
+			price: "1,80 €"
+		},
 		{
-		itemName: "Pinta 1/2L Estrella Damm",
-		description: "",
-		price: "3,00 €"
-	},
+			itemName: "Pinta 1/2L Estrella Damm",
+			description: "",
+			price: "3,00 €"
+		},
 		{
-		itemName: "Radler Amstel",
-		description: "",
-		price: "3,00 €"
-	},
+			itemName: "Radler Amstel",
+			description: "",
+			price: "3,00 €"
+		},
 		{
-		itemName: "Aguila sin filtrar",
-		description: "",
-		price: "3,00 €"
-	},
+			itemName: "Aguila sin filtrar",
+			description: "",
+			price: "3,00 €"
+		},
 		{
-		itemName: "Mahou roja",
-		description: "",
-		price: "3,00 €"
-	},
+			itemName: "Mahou roja",
+			description: "",
+			price: "3,00 €"
+		},
 		{
-		itemName: "1/3 Alhambra verde reserva",
-		description: "",
-		price: "3,00 €"
-	},
+			itemName: "1/3 Alhambra verde reserva",
+			description: "",
+			price: "3,00 €"
+		},
 		{
-		itemName: "13 Turia",
-		description: "",
-		price: "2,70 €"
-	},
+			itemName: "13 Turia",
+			description: "",
+			price: "2,70 €"
+		},
 		{
-		itemName: "1/3 Free Damm Tostada 00%",
-		description: "",
-		price: "2,70 €"
-	},
+			itemName: "1/3 Free Damm Tostada 00%",
+			description: "",
+			price: "2,70 €"
+		},
 	]
 }
-function Edible(itemName, description, price) {
 
-	this.itemName = itemName;
-	this.description = description;
-	this.price = price;
-}
-var patatas = new Edible("patatas", "buenisimas con tomate", "15.95");
-var croquetas = new Edible("croquetas", "buenisimas con turron", "3.95");
 
-var allEdibles = [patatas, croquetas];
-console.log(allEdibles)
 function App() {
 
 	const [open, setOpen] = React.useState(false);
@@ -495,9 +489,9 @@ function App() {
 				<br></br>
 				<br></br><br></br>
 				<div >
-				
-				<span className='anticdidone whiteSpace'>Abierto de 12:00h a 16:00h y de 19:00h a 23:00h
-				</span>
+
+					<span className='anticdidone whiteSpace horario'>Abierto de 12:00h a 16:00h y de 19:00h a 23:00h
+					</span>
 				</div>
 
 			</header>
@@ -515,14 +509,17 @@ function App() {
 					<Carta title="Otras Bebidas" edibles={edibless.bebida} cupView={false}></Carta>
 					<Carta title="Cerveza" edibles={edibless.cerveza} cupView={false}></Carta>
 
-					<Carta title="Tapas" edibles={edibless.tapas}></Carta>
-					<Carta title="Postres" edibles={edibless.postres}></Carta>
-					<Carta title="Cafés" edibles={edibless.cafes}></Carta>
-					<Carta title="Infusiones" edibles={edibless.infusiones}></Carta>
+					<Carta title="Tapas" edibles={edibless.tapas} cupView={false}></Carta>
+					<Carta title="Postres" edibles={edibless.postres} cupView={false}></Carta>
+					<Carta title="Cafés" edibles={edibless.cafes} cupView={false}></Carta>
+					<Carta title="Infusiones" edibles={edibless.infusiones} cupView={false}></Carta>
 
 
 				</div>
-
+				<gmp-map center="38.64411163330078,0.04517728090286255" zoom="14" map-id="DEMO_MAP_ID">
+					<gmp-advanced-marker position="38.64411163330078,0.04517728090286255" title="My location">
+					</gmp-advanced-marker>
+				</gmp-map>
 			</main>
 			<footer>
 				<div className='footerLeft'>
@@ -533,7 +530,9 @@ function App() {
 					<span className='bold'>Samantha</span>
 					<span>666 66 66 66</span>
 				</div>
+
 			</footer>
+
 		</div>
 
 	);
