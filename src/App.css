@@ -1,4 +1,8 @@
 
+iframe{
+margin:8px;
+margin-top:0px;
+}
 
 div[class*=box] {
   height: 33.33%;
@@ -105,8 +109,8 @@ gmp-map {
 }
 
 h3 {
-  font-size: 2rem;
-  margin: 42px;
+  font-size: 1.8rem;
+  margin-top: 20px;
   letter-spacing: 0.2em;
 }
 
@@ -149,8 +153,8 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding: 0px;
-  padding-bottom: 45px !important;
-  margin-top:50px;
+  padding-bottom: 35px !important;
+  margin-top:30px;
 
 }
 
@@ -306,6 +310,11 @@ label.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-disabled {
 }
 
 @media only screen and (max-width: 600px) {
+  iframe{
+    margin:8px;
+    margin-top:0px;
+    width: 145%;
+    }
   .App-header {
     background-image: url("background.jpg");
     background-repeat: no-repeat;
@@ -330,7 +339,7 @@ label.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-disabled {
   h3 {
     font-size: 1.5rem;
     margin-top: 33px;
-    margin-bottom: 33px;
+    letter-spacing: 0.12em;
   }
 
   header {

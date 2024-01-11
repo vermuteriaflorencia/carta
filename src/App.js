@@ -497,8 +497,9 @@ function App() {
 			</header>
 
 			<main>
+			
 				<div className='cartaBox'>
-					<h3 className='anticdidone'>Carta Vermuteria Florencia</h3>
+				<h3 className='anticdidone'>Carta Vermuteria Florencia</h3>
 					<Carta title="Vino Rosado" edibles={edibless.vinos.rosado} cupView={true}></Carta>
 					<Carta title="Vino Tinto" edibles={edibless.vinos.tinto} cupView={true}></Carta>
 					<Carta title="Vino Blanco" edibles={edibless.vinos.blanco} cupView={true}></Carta>
@@ -513,14 +514,13 @@ function App() {
 					<Carta title="Postres" edibles={edibless.postres} cupView={false}></Carta>
 					<Carta title="Cafés" edibles={edibless.cafes} cupView={false}></Carta>
 					<Carta title="Infusiones" edibles={edibless.infusiones} cupView={false}></Carta>
-
+					<h3>¿Donde estamos?</h3>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194.7628932043903!2d0.04522156151859681!3d38.64413672464667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129dff42ad25dd6f%3A0xa46339bb641b1e1c!2sRestaurante%20Casa%20Florencia.!5e0!3m2!1ses!2ses!4v1704978390660!5m2!1ses!2ses" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 				</div>
-				<gmp-map center="38.64411163330078,0.04517728090286255" zoom="14" map-id="DEMO_MAP_ID">
-					<gmp-advanced-marker position="38.64411163330078,0.04517728090286255" title="My location">
-					</gmp-advanced-marker>
-				</gmp-map>
-			</main>
+				
+							</main>
+
 			<footer>
 				<div className='footerLeft'>
 					<span className='bold'>Ana</span>
