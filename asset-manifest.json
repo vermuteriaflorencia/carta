@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/carta/static/css/main.9271f576.css",
+    "main.css": "/carta/static/css/main.76d98639.css",
     "main.js": "/carta/static/js/main.4e5eb317.js",
     "static/js/787.a2157c3f.chunk.js": "/carta/static/js/787.a2157c3f.chunk.js",
     "static/media/background.jpg": "/carta/static/media/background.78d7fcb83b4ee5e550c0.jpg",
@@ -9,12 +9,12 @@
     "static/media/LOGO VERMUTERÍA FLORENCIA BLANCO.png": "/carta/static/media/LOGO VERMUTERÍA FLORENCIA BLANCO.3f5fe9b9da159fc84b9b.png",
     "static/media/LOGO_IZQ_white.png": "/carta/static/media/LOGO_IZQ_white.6c15cbfce104aac82080.png",
     "index.html": "/carta/index.html",
-    "main.9271f576.css.map": "/carta/static/css/main.9271f576.css.map",
+    "main.76d98639.css.map": "/carta/static/css/main.76d98639.css.map",
     "main.4e5eb317.js.map": "/carta/static/js/main.4e5eb317.js.map",
     "787.a2157c3f.chunk.js.map": "/carta/static/js/787.a2157c3f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9271f576.css",
+    "static/css/main.76d98639.css",
     "static/js/main.4e5eb317.js"
   ]
 }
