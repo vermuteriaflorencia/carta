@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/carta/static/css/main.38e7154f.css",
+    "main.css": "/carta/static/css/main.fd868dc0.css",
     "main.js": "/carta/static/js/main.235f77da.js",
     "static/js/787.a2157c3f.chunk.js": "/carta/static/js/787.a2157c3f.chunk.js",
     "static/media/background.jpg": "/carta/static/media/background.78d7fcb83b4ee5e550c0.jpg",
+    "static/media/back.jpg": "/carta/static/media/back.fa12e97c7fe275b57857.jpg",
     "static/media/BARKENTINA 1.OTF": "/carta/static/media/BARKENTINA 1.15173fa1daf2edaf96d4.OTF",
     "static/media/POR SIEMPRE GÓTICA.TTF": "/carta/static/media/POR SIEMPRE GÓTICA.cbb55afd731e200918d6.TTF",
     "static/media/LOGO VERMUTERÍA FLORENCIA BLANCO.png": "/carta/static/media/LOGO VERMUTERÍA FLORENCIA BLANCO.3f5fe9b9da159fc84b9b.png",
     "static/media/LOGO_IZQ_white.png": "/carta/static/media/LOGO_IZQ_white.6c15cbfce104aac82080.png",
     "index.html": "/carta/index.html",
-    "main.38e7154f.css.map": "/carta/static/css/main.38e7154f.css.map",
+    "main.fd868dc0.css.map": "/carta/static/css/main.fd868dc0.css.map",
     "main.235f77da.js.map": "/carta/static/js/main.235f77da.js.map",
     "787.a2157c3f.chunk.js.map": "/carta/static/js/787.a2157c3f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.38e7154f.css",
+    "static/css/main.fd868dc0.css",
     "static/js/main.235f77da.js"
   ]
 }
