@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/carta/static/css/main.86860a72.css",
+    "main.css": "/carta/static/css/main.b34081d9.css",
     "main.js": "/carta/static/js/main.17f1faeb.js",
     "static/js/787.a2157c3f.chunk.js": "/carta/static/js/787.a2157c3f.chunk.js",
     "static/media/coctel.jpg": "/carta/static/media/coctel.2941d9520111f82e12af.jpg",
@@ -9,12 +9,12 @@
     "static/media/POR SIEMPRE GÓTICA.TTF": "/carta/static/media/POR SIEMPRE GÓTICA.cbb55afd731e200918d6.TTF",
     "static/media/LOGO_IZQ_white.png": "/carta/static/media/LOGO_IZQ_white.6c15cbfce104aac82080.png",
     "index.html": "/carta/index.html",
-    "main.86860a72.css.map": "/carta/static/css/main.86860a72.css.map",
+    "main.b34081d9.css.map": "/carta/static/css/main.b34081d9.css.map",
     "main.17f1faeb.js.map": "/carta/static/js/main.17f1faeb.js.map",
     "787.a2157c3f.chunk.js.map": "/carta/static/js/787.a2157c3f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.86860a72.css",
+    "static/css/main.b34081d9.css",
     "static/js/main.17f1faeb.js"
   ]
 }
